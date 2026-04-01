@@ -7,7 +7,12 @@ import questionRoutes from "@routes/question.routes";
 const app = express();
 
 // CORS for your frontend (adjust if needed)
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+app.use(
+  cors({
+    origin: process.env.CORS_ORIGIN || "http://localhost:3000",
+    credentials: true,
+  })
+);
 
 // Body & cookies
 app.use(express.json());
