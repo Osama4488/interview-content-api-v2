@@ -1,8 +1,8 @@
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import categoryRoutes from "@routes/category.routes";
-import questionRoutes from "@routes/question.routes";
+import categoryRoutes from "./routes/category.routes";
+import questionRoutes from "./routes/question.routes";
 
 const app = express();
 
