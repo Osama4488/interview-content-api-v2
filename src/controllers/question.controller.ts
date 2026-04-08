@@ -1,6 +1,6 @@
 import { Response } from "express";
 import Question from "../models/Question";
-import { AuthedRequest } from "@middlewares/requireAuth";
+import { AuthedRequest } from "../middlewares/requireAuth";
 
 export async function createQuestion(req: AuthedRequest, res: Response) {
   const userId = req.user!.sub;
