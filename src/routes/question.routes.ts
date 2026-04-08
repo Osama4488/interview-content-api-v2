@@ -5,18 +5,18 @@ import {
   listQuestions,
   updateQuestion,
   deleteQuestion,
-} from "@controllers/question.controller";
+} from "../controllers/question.controller";
 
-import { validateBody } from "@middlewares/validateBody";
-import { validateQuery } from "@middlewares/validateQuery";
-import { validateParams } from "@middlewares/validateParams";
+import { validateBody } from "../middlewares/validateBody";
+import { validateQuery } from "../middlewares/validateQuery";
+import { validateParams } from "../middlewares/validateParams";
 
 import {
   createQuestionSchema,
   listQuestionsQuerySchema,
   updateQuestionSchema,
   questionIdParamsSchema,
-} from "@controllers/schemas/question.schemas";
+} from "../controllers/schemas/question.schemas";
 
 const r = Router();
 r.use(requireAuth);

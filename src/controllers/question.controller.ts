@@ -1,5 +1,5 @@
 import { Response } from "express";
-import Question from "@models/Question";
+import Question from "../models/Question";
 import { AuthedRequest } from "@middlewares/requireAuth";
 
 export async function createQuestion(req: AuthedRequest, res: Response) {

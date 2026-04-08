@@ -1,7 +1,7 @@
 import { Response } from "express";
-import Category from "@models/Category";
+import Category from "../models/Category";
 import slugify from "slugify";
-import { AuthedRequest } from "@middlewares/requireAuth";
+import { AuthedRequest } from "../middlewares/requireAuth";
 
 export async function createCategory(req: AuthedRequest, res: Response) {
   const userId = req.user!.sub;

@@ -1,21 +1,21 @@
 import { Router } from "express";
-import { requireAuth } from "@middlewares/requireAuth";
+import { requireAuth } from "../middlewares/requireAuth";
 
 import {
   createCategory,
   listCategories,
   updateCategory,
   deleteCategory,
-} from "@controllers/category.controller";
+} from "../controllers/category.controller";
 
-import { validateBody } from "@middlewares/validateBody";
-import { validateParams } from "@middlewares/validateParams";
+import { validateBody } from "../middlewares/validateBody";
+import { validateParams } from "../middlewares/validateParams";
 
 import {
   createCategorySchema,
   updateCategorySchema,
   categoryIdParamsSchema,
-} from "@controllers/schemas/category.schemas";
+} from "../controllers/schemas/category.schemas";
 
 const r = Router();
 
